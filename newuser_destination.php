@@ -57,7 +57,7 @@ if(mysqli_connect_errno())
       
         	echo "Password Didn't Match, You will be redirected to login page after 2 sec";
 
-        	header("refresh:2; url=newuser(source).php");
+        	header("refresh:2; url=newuser_source.php");
         }
        
 
