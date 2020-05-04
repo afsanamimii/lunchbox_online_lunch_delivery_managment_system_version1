@@ -7,7 +7,7 @@
 
 	<body>
 		
-			<form action="newuser(destination).php" method="POST">
+			<form action="newuser_destination.php" method="POST">
               <tr>
               	<td>First Name:</td>
               	<td> <input type="text" name="first_name" placeholder="first name"></td>
