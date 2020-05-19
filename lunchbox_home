@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>ADMIN PANNEL</title>
+			
+			
+		</head>
+		<body>
+            
+			<ul>
+			<li><a href="gettingorderbyadmin.php"> Current orders </a></li>
+			<br>
+			
+            
+			<ul>
+			<li><a href="mid-1(source).php"> MID-1 </a></li>
+			<br>
+			<ul>
+			<li><a href="mid-2(source).php"> MID-2 </a></li>
+			<br>
+			<ul>
+			<li><a href="final(source).php"> FINAL </a></li>
+			<br>
+			<ul>
+			<li><a href="result.php"> RESULT VIEW </a></li>
+			<br>
+
+			</ul>
+		
+		
+		</body>
+		</html>

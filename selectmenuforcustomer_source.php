@@ -1,3 +1,6 @@
+
+
+
 <html>
 <head>
 	<h1> welcome to lunchbox </h1>
@@ -5,10 +8,46 @@
 	</head>
 
 	<body>
+
    
    	<h1>Please Select The Item You Want To Order</h1>
 		<br>
 		<form action="selectmenuforcustomer_destination.php" method="get">
+			<p><h3>Make sure that u have added the quantity of your orderer item</h3> </p>
+
+<table>
+		<tr>
+			<td>Your First Name:</td>
+			<td><input type="text" name="fname"></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td>Your last Name:</td>
+			<td><input type="text" name="lname"></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td>Your Phone Number:</td>
+			<td><input type="text" name="num"></td>
+		</tr>
+		<br>
+ <tr>
+			<td>Your Address:</td>
+			<td><input type="text" name="add"></td>
+		</tr>
+		<br>
+
+	</table>
+
+
+
+
+<br>
+
+
+
 		<input type="checkbox" name="choice[]" value="1">biriani,price 150/plate 
 		<table>
 		<tr>

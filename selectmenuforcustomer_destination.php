@@ -10,6 +10,8 @@ if(mysqli_connect_errno())
 {
 	die("connextion failed....!!!!" .mysqli_connect_errno());
 }
+
+
 ?>
 
 
@@ -24,6 +26,7 @@ if(mysqli_connect_errno())
 
 
 <?php
+
 
 if(isset($_GET["choice"]))
 
@@ -47,6 +50,10 @@ if(isset($_GET["choice"]))
  $quantity8=$_GET["equantity"];
  $quantity9=$_GET["wquantity"];
  $quantity10=$_GET["dquantity"];
+ $fname=$_GET["fname"];
+ $lname=$_GET["lname"];
+ $num=$_GET["num"];
+ $add=$_GET["add"];
  $price=0.0;
  $c=count($food);
 
@@ -171,9 +178,9 @@ echo "total bill is".$price."<br>";
 
 
 
- $sql="insert into order_list(item1,quantity1,item2,quantity2,item3,quantity3,item4,quantity4,item5,quantity5,item6,quantity6,item7,quantity7,item8,
+ $sql="insert into order_list(firstname,lastname,phonenumber,item1,quantity1,item2,quantity2,item3,quantity3,item4,quantity4,item5,quantity5,item6,quantity6,item7,quantity7,item8,
 
-     quantity8,item9,quantity9,item10,quantity10,total)"."values('$item[0]','$quantity[0]','$item[1]','$quantity[1]','$item[2]','$quantity[2]','$item[3]','$quantity[3]','$item[4]','$quantity[4]','$item[5]','$quantity[5]','$item[6]','$quantity[6]','$item[7]','$quantity[7]','$item[8]','$quantity[8]','$item[9]','$quantity[9]','$price')";
+     quantity8,item9,quantity9,item10,quantity10,total,address)"."values('$fname','$lname','$num','$item[0]','$quantity[0]','$item[1]','$quantity[1]','$item[2]','$quantity[2]','$item[3]','$quantity[3]','$item[4]','$quantity[4]','$item[5]','$quantity[5]','$item[6]','$quantity[6]','$item[7]','$quantity[7]','$item[8]','$quantity[8]','$item[9]','$quantity[9]','$price','$add')";
         $res=mysqli_query($conn,$sql);
 
         if(!$res)
@@ -182,8 +189,12 @@ echo "total bill is".$price."<br>";
         }
 
         else{ 
-        	echo "your order is taken";
+
+
+         
         
+        	echo  "your order is taken" ;
+         
 
     }
 
@@ -194,7 +205,7 @@ echo "total bill is".$price."<br>";
 
 else
 {
-	echo "select at least one item\n";
+	echo "select at least one item/n";
 	echo "You will be redirected to order page after 2 sec";
 
         	header("refresh:2; url=selectmenuforcustomer_source.php");
@@ -202,12 +213,15 @@ else
 }
 
 
-        	
+       	
     
 
 
 
 
 ?>
+
+<a href="customer_home.php">home</a>
+<a href=  "selectmenuforcustomer_source.php">order more</a>
 </body>
 </html>
