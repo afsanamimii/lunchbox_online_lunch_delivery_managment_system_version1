@@ -2,7 +2,7 @@ Lunchbox-Online Lunch Delivery System
 
 
 ---------------------------------------------------------------------
-Saves customer and deliverymans profile in database by a unique ID
+Saves customer and delivery men profile in database by a unique ID
 
 Allows placing and tracking orders 
 
